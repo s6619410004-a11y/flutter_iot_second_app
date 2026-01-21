@@ -1,6 +1,7 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter_iot_second_app/views/signup_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SigninUi extends StatefulWidget {
@@ -167,6 +168,7 @@ class _SigninUiState extends State<SigninUi> {
                 OutlinedButton(
                   onPressed: () {},
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
                         'assets/images/googlelogo.png',
@@ -206,7 +208,14 @@ class _SigninUiState extends State<SigninUi> {
                       'Don\'t have an Acconut?',
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignupUi(),
+                          ),
+                        );
+                      },
                       child: Text(
                         'Sign Up',
                         style: TextStyle(
