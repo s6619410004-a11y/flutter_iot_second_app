@@ -1,6 +1,8 @@
 // ignore_for_file: sort_child_properties_last
 
 import 'package:flutter/material.dart';
+import 'package:flutter_iot_second_app/views/signin_ui.dart';
+import 'package:flutter_iot_second_app/views/signup_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeUi extends StatelessWidget {
@@ -9,7 +11,7 @@ class HomeUi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
+      backgroundColor: Colors.amber[400],
       body: Center(
         child: Column(
           children: [
@@ -31,7 +33,7 @@ class HomeUi extends StatelessWidget {
             Text(
               'สวัสดีชาวโลก IoTSAU',
               style: TextStyle(
-                fontSize: 25.0,
+                fontSize: 30.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.grey[800],
               ),
@@ -39,14 +41,14 @@ class HomeUi extends StatelessWidget {
             Text(
               'Southeast Asia University',
               style: TextStyle(
-                fontSize: 18.0,
+                fontSize: 20.0,
                 color: Colors.grey[800],
               ),
             ),
             Text(
               'Created by NinniN IoT-SAU 2026',
               style: GoogleFonts.itim(
-                fontSize: 18.0,
+                fontSize: 20.0,
                 color: Colors.grey[800],
               ),
             ),
@@ -57,10 +59,18 @@ class HomeUi extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SigninUi(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'LOGIN',
                     style: TextStyle(
+                      fontSize: 20.0,
                       color: Colors.black,
                     ),
                   ),
@@ -78,9 +88,19 @@ class HomeUi extends StatelessWidget {
                   width: 20.0,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SignupUi(),
+                      ),
+                    );
+                  },
                   child: Text(
                     'SIGINUP',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                    ),
                   ),
                   style: OutlinedButton.styleFrom(
                     fixedSize: Size(
