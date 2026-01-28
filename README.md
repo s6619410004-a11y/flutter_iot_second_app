@@ -1,16 +1,9 @@
-# flutter_iot_second_app
+## Mobile Application with Flutter&Dart
 
-A new Flutter project.
+## UI Only for HomeUi, SignunUi, SignupUi
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="250" src="https://github.com/user-attachments/assets/d347a004-7428-441a-96c3-f9089860cd45" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="250" src="https://github.com/user-attachments/assets/1d711a88-ecc6-4347-9827-4ca0590ecf2b" />
+<br /><br /><br />
+<img width="250" src="https://github.com/user-attachments/assets/6562f2af-047e-4151-9adf-5b94e2710e0e" />
